@@ -89,5 +89,17 @@ please create an issue for any question or bug report.
 
  - `.gs` file which contains a function with the same name as the file will not work [#18](https://github.com/leonhartX/gas-github/issues/18). (limited by GAS'S RPC)
  - Can not push to a blank repo without a init commit. (limited by GitHub API)
+ - G Suite Users (aka paid Google Apps) need to perform extra steps
+   * Go Admin Console
+   * Go Device Management > Chrome management
+   * Go User settings > Apps & Extensions > Managed force-installed apps
+   * Go Chrome Web Store and type gas-github (in search box)
+   * Click Add > Click Save (to Force-installed Apps & Extensions)
+   * Since this is a developer tool, in same page, go User Experience
+   * In Developer Tools, select "Always allow use of built-in developer tools"
+   * Click Save (to User settings ; it will be at the very bottom of page)
+   * Reload GAS IDE (or logout / log back in to account).
+
+   You should now see the new buttons for this extension. If the above needs clarification via pictures, you can see generic detail [here](https://support.texthelp.com/help/equatio-how-to-deploy-apps-and-extensions-through-the-google-admin-console).
  
 PS: There is a similar [extension](https://github.com/leonhartX/lambda-github) for sync your AWS lambda code.
